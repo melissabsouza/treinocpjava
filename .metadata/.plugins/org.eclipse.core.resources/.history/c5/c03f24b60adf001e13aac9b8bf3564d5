@@ -1,0 +1,5 @@
+package br.com.fiap.ddd.model;
+
+public class Aluno {
+
+}

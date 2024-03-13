@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="br.com.fiap.ddd.model.ExecucaoTreino"/>
+    <fullyQualifiedTypeName name="br.com.fiap.ddd.model.AlunoSemTreinoCadastradoException"/>
+    <fullyQualifiedTypeName name="br.com.fiap.ddd.model.Exercicio"/>
+    <fullyQualifiedTypeName name="br.com.fiap.ddd.model.AlunoJaRealizouTreinoNaDataException"/>
+    <fullyQualifiedTypeName name="java.lang.Runtime"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="br.com.fiap.ddd.repositorios.AlunoRepository"/>
+    <fullyQualifiedTypeName name="br.com.fiap.ddd.repositorios.AlunoRepositoryEmMemoria"/>
+    <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+    <fullyQualifiedTypeName name="br.com.fiap.ddd.model.Aluno"/>
+    <fullyQualifiedTypeName name="br.com.fiap.ddd.model.AlunoComMatriculaDuplicadaException"/>
+</qualifiedTypeNameHistroy>

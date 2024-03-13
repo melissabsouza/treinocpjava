@@ -1,0 +1,35 @@
+package br.com.fiap.ddd.repositorios;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import br.com.fiap.ddd.model.Aluno;
+
+public class AlunoRepositoryEmMemoria extends AlunoRepository {
+	
+	private List<Aluno> alunos = new ArrayList<Aluno>();
+	
+	@Override
+	public Aluno buscarPorMatricula(String matricula) {
+		
+		for(Aluno alunoExistente: this.alunos) {
+			
+			if(alunoExistente.getMatricula().equals(matricula)) {
+				return alunoExistente;
+			}
+			
+			return null;
+			
+		}
+		
+
+		@Override
+		protected void salvarAluno(Aluno aluno) {
+			if (aluno == null) {
+				throw new IllegalArgumentException();
+			}
+			
+			this.alunos.add(aluno);
+	}
+
+}

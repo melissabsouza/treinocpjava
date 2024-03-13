@@ -1,0 +1,18 @@
+package br.com.fiap.ddd.model;
+
+public class TesteAcademia {
+
+	public static void main(String[] args) {
+		
+		Aluno aluno = new Aluno("Melissa","552535");
+		
+		try {
+			aluno.registrarExecucao();
+			
+		} catch (AlunoSemTreinoCadastradoException ex) {
+			System.out.println(ex.getMessage());
+		}
+
+	}
+
+}

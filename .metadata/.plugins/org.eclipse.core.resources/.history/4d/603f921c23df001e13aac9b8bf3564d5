@@ -1,0 +1,11 @@
+package br.com.fiap.ddd.repositorios;
+
+import br.com.fiap.ddd.model.Aluno;
+public class TesteAlunoRepository {
+
+	public static void main(String[] args) {
+		Aluno novoAluno = new Aluno("Melissa", "552535";)
+
+	}
+
+}

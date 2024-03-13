@@ -1,0 +1,26 @@
+package br.com.fiap.ddd.repositorios;
+
+import br.com.fiap.ddd.model.Aluno;
+import br.com.fiap.ddd.model.AlunoComMatriculaDuplicadaException;
+
+public class TesteAlunoRepository {
+
+	public static void main(String[] args) {
+		
+		AlunoRepositoryFactory factory = new AlunoRepositoryFactory();
+		
+		AlunoRepository repositorio = factory.getAlunoRepository(TipoImplementacao.MEMORIA);
+		
+		Aluno aluno = new Aluno("Melissa", "552535");
+
+	}
+	
+		repositorio.adicionarNovoAluno(aluno);
+	
+	try {
+		repositorio.adicionarNovoAluno();
+	} catch(AlunoComMatriculaDuplicadaException ex) {
+		System.out.println(ex.getMessage());
+	}
+
+}

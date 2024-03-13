@@ -1,0 +1,38 @@
+package br.com.fiap.ddd.model;
+
+public class TesteAcademia {
+
+	public static void main(String[] args) {
+		
+		Aluno aluno = new Aluno("Melissa","552535");
+		
+		try {
+			aluno.registrarExecucao();
+			
+		} catch (AlunoSemTreinoCadastradoException ex) {
+			System.out.println(ex.getMessage());
+		}
+		
+		Treino novoTreino = new Treino();
+		
+		Exercicio exercicio1 = new Exercicio("esteira", 1, 60, "60 min esteira");
+		Exercicio exercicio2 = new Exercicio("agachamento", 3, 10, "muitos agachamentos");
+		aluno.adicionarTreino(novoTreino);
+		novoTreino.adicionarExercicio(exercicio1);
+		novoTreino.adicionarExercicio(exercicio2);
+		aluno.registrarExecucao();
+		
+		try {
+			aluno.registrarExecucao();
+			
+		}catch(AlunoJaRealizouTreinoNaDataException ex){
+			System.out.println(ex.getMessage());
+			
+		}
+		
+		System.out.println("fim do programa");
+		
+
+	}
+
+}

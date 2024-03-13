@@ -1,0 +1,13 @@
+package br.com.fiap.ddd.repositorios;
+
+public class AlunoRepositoryFactory {
+	
+	public AlunoRepository getAlunoRepository(TipoImplementacao tipo) {
+		
+		if(tipo == tipoImplementacao.MEMORIA) {
+			
+			return new AlunoRepositoryEmMemoria();
+		}
+	}
+
+}

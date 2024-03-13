@@ -1,0 +1,10 @@
+package br.com.fiap.ddd.model;
+
+public class TesteAcademia {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
